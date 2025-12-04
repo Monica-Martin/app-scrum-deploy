@@ -1,0 +1,16 @@
+<article class="card">
+  <div class="media">
+    <img [src]="product.image" alt="{{product.name}}" />
+  </div>
+  <div class="body">
+    <h3>{{ product.name }}</h3>
+    <p class="price">€ {{ product.price.toFixed(2) }}</p>
+
+    <p *ngIf="product.available; else notAvailable" class="available">Disponible</p>
+    <ng-template #notAvailable>
+      <p class="unavailable">No disponible</p>
+    </ng-template>
+
+    <button class="buy" *ngIf="product.available" (click)="onBuy()">Comprar</button>
+  </div>
+</article>
