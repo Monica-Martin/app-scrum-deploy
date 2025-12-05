@@ -1,0 +1,7 @@
+<section class="catalog">
+  <div class="grid">
+    <ng-container *ngFor="let p of products">
+      <app-product-item [product]="p" (buy)="onBuy($event)"></app-product-item>
+    </ng-container>
+  </div>
+</section>
