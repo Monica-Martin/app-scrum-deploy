@@ -1,12 +1,13 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CatalogoHWComponent } from './catalogo/catalogo-hw.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [CatalogoHWComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  styleUrls: ['./app.css']
 })
 export class App {
-  protected readonly title = signal('app-scrum-deploy');
+  protected readonly title = signal('Halloween');
 }

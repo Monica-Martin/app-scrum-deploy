@@ -1,0 +1,5 @@
+.catalog{ padding:20px; color:#fff; font-family: Arial, Helvetica, sans-serif }
+.catalog h2{ color:#ff9400; text-align:center; margin-bottom:14px }
+.grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap:16px }
+app-product-item{ display:block }
+body{ background: radial-gradient(circle at 10% 10%, #2b0b0b, #12060a 60%); }
